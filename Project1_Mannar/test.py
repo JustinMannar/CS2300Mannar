@@ -13,11 +13,6 @@ def makeMatrix (nrows, ncols, start, incr):
 
     return mat
 
-#def writeToFile(matrix,file):
- #   f=open(file, "w")
-  #  f.write(matrix)
-   # f.close()
-
 def writeFile(matrix, file):
     with open(file,'w') as f:
         for row in matrix:
