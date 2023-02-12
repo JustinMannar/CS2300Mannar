@@ -79,7 +79,15 @@ def writeFile(matrix, file):
     with open(file,'w') as f:
         for row in matrix:
             f.write(' '.join(map(lambda n: f"{n:.2f}", row)) + '\n')
-
+"""
+tried two different file writers, neither are working, so now I am at a complete loss.
+"""
+def writeNewFile(matrix,file):
+    for row in matrix:
+        for i in range(len(row)):
+            string = (str(row[i]) + " ")
+            file.writeLines(string)
+        file.write("\n")
 
 def multiplyMatrices(mat1, mat2):
     result = [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0],

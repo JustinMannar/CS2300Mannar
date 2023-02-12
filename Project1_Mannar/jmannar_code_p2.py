@@ -7,9 +7,9 @@ for line in matrix1.readlines():
     for num in l:
         m1[i].append(float(num))
     i = i + 1
-print(m1)
+#print(m1)
 
-print("\n")
+#print("\n")
 
 m2 = [[], [], [], [], [], []]
 matrix1 = open('jmannar_mat2.txt', 'r')
@@ -20,9 +20,9 @@ for line in matrix1.readlines():
     for num in l:
         m2[i].append(float(num))
     i = i + 1
-print(m2)
+#print(m2)
 
-print("\n")
+#print("\n")
 
 m3 = [[], [], [], [], [], []]
 matrix1 = open('jmannar_mat3.txt', 'r')
@@ -33,9 +33,9 @@ for line in matrix1.readlines():
     for num in l:
         m3[i].append(float(num))
     i = i + 1
-print(m3)
+#print(m3)
 
-print("\n")
+#print("\n")
 
 m4 = [[], [], [], []]
 matrix1 = open('jmannar_mat4.txt', 'r')
@@ -46,9 +46,9 @@ for line in matrix1.readlines():
     for num in l:
         m4[i].append(float(num))
     i = i + 1
-print(m4)
+#print(m4)
 
-print("\n")
+#print("\n")
 
 m5 = [[], [], [], []]
 matrix1 = open('jmannar_mat5.txt', 'r')
@@ -59,9 +59,9 @@ for line in matrix1.readlines():
     for num in l:
         m5[i].append(float(num))
     i = i + 1
-print(m5)
+#print(m5)
 
-print("\n")
+#print("\n")
 
 m6 = [[], []]
 matrix1 = open('jmannar_mat6.txt', 'r')
@@ -72,7 +72,7 @@ for line in matrix1.readlines():
     for num in l:
         m6[i].append(float(num))
     i = i + 1
-print(m6)
+#print(m6)
 
 
 def writeFile(matrix, file):
@@ -105,6 +105,15 @@ def addMatrices(matrix1, matrix2):
         print('\n')
 
 
+addMatrices(m1, m2)
+print("\n")
+print("second addition matrix")
+addMatrices(m2, m3)
+print("\n")
+print("third additive matrix")
+addMatrices(m1, m3)
+print("\n")
+print("4th additive matrix")
 addMatrices(m4, m5)
 
 """
@@ -112,6 +121,6 @@ This code works, any two matrices that are able to be
 added can be added successfully by the function addMatrices(), but I cannot 
 figure out how to get the output to a file. I figured it out with the other times I needed one, 
 and I dont know what is different about it this time around, but I just cant figure it out.A similar 
-things is happening with the function to multiply matrices, but I have a note there as well
+things is happening with the function to multiply matrices, but I have a note in my part 3 code as well
 
 """
