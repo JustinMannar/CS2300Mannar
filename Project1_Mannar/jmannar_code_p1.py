@@ -26,11 +26,11 @@ mat1 = (makeMatrix(len(firstName), len(lastName), 1, 1))
 print(mat1)
 writeFile(mat1,"jmannar_mat1.txt")
 
-mat2 = (makeMatrix(6, 6, 2, 3))
+mat2 = (makeMatrix(len(firstName), len(lastName), 2, 3))
 print(mat2)
 writeFile(mat2,"jmannar_mat2.txt")
 
-mat3 = (makeMatrix(6, 6, 0.2, 0.2))
+mat3 = (makeMatrix(len(firstName), len(lastName), 0.2, 0.2))
 print(mat3)
 writeFile(mat3,"jmannar_mat3.txt")
 
